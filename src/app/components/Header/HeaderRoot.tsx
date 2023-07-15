@@ -5,5 +5,9 @@ interface HeaderRootProps {
 }
 
 export function HeaderRoot({ children }: HeaderRootProps) {
-  return <header className="shadow py-2 px-4 drop-shadow-lg">{children}</header>
+  return (
+    <header className="py-2 h-[150px] px-4 flex items-center justify-between">
+      {children}
+    </header>
+  )
 }

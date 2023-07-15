@@ -1,6 +1,7 @@
 import './globals.css'
 import { ReactNode } from 'react'
 import { Inter } from 'next/font/google'
+import clsx from 'clsx'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +17,7 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="pt-BR">
-      <body className={inter.className}>{children}</body>
+      <body className={clsx('bg-green-500', inter.className)}>{children}</body>
     </html>
   )
 }
